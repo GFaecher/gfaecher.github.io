@@ -236,6 +236,14 @@ p {
         width: 100%;
         padding: 0 1rem;
         align-items: center;
+        text-align: center;
+    }
+
+    .bio-img {
+        max-width: 80vw;
+        height: auto;
+        border-radius: 1rem;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
     .text-bio p {
@@ -244,23 +252,30 @@ p {
     }
 
     .gallery-container {
-        flex-direction: column;
+        flex-direction: row;
         padding: 0 1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .gallery-image {
+        max-width: 70vw;
+        height: auto;
     }
 
     .arrow.left, .arrow.right {
-        top: auto;
-        bottom: -3rem;
-        transform: none;
-        position: relative;
-        margin: 0 0.5rem;
+        position: absolute;
+        top: 50%;
+        bottom: auto;
+        transform: translateY(-50%);
+        margin: 0;
     }
 
     .arrow.left {
-        left: auto;
+        left: -2rem;
     }
 
     .arrow.right {
-        right: auto;
+        right: -2rem;
     }
 }
