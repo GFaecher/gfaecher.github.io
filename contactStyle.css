@@ -142,7 +142,7 @@ nav a {
     color: #C8A2C8;
     transform: scale(1.35);
     font-style: italic;
-    animation: floatUpDown 2s ease-in-out infinite;
+    animation: floatUpDown 1s ease-in-out infinite;
 }
 .conn-link:hover {
     color: #C8A2C8;
@@ -177,28 +177,39 @@ nav a {
         margin-top: 7rem;
         padding: 1rem;
         font-size: 16px;
+        text-align: center;
     }
 
     .header-text {
         font-size: 24px;
-        text-align: center;
     }
 
     .header-subtext {
         font-size: 16px;
-        text-align: center;
         max-width: 90%;
+        margin-top: 0.5rem;
     }
 
-    .image-container {
-        flex-direction: column;
-        gap: 1.5rem;
+    .contact-container {
+        width: 90%;
         margin-top: 5rem;
+        padding: 1rem;
+        border-radius: 2rem;
     }
 
-    .image-obj {
-        width: 80vw;
-        height: auto;
-        border-radius: 1rem;
+    .Contact-Medium {
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .icon {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .conn-link {
+        font-size: 16px;
     }
 }

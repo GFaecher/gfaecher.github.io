@@ -160,53 +160,50 @@ nav a {
 /*-------------------------------Mobile Styles--------------------------------*/
 
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        height: auto;
-        padding: 1rem;
-        gap: 0.5rem;
-    }
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+    gap: 0.5rem;
+  }
 
-    .nav-left, .nav-center, .nav-right {
-        width: 100%;
-        justify-content: center;
-    }
+  .nav-left, .nav-center, .nav-right {
+    width: 100%;
+    justify-content: center;
+  }
 
-    nav a {
-        font-size: 16px;
-    }
+  nav a {
+    font-size: 16px;
+  }
 
-    .title {
-        font-size: 24px;
-    }
+  .title {
+    font-size: 24px;
+  }
 
-    .header {
-        margin-top: 7rem;
-        padding: 1rem;
-        font-size: 16px;
-    }
+  .projects-container {
+    padding: 2rem 1rem;
+    margin-top: 7rem;
+    gap: 2rem;
+  }
 
-    .header-text {
-        font-size: 24px;
-        text-align: center;
-    }
+  .project-box {
+    flex-direction: column;
+    width: 100%;
+    min-height: auto;
+  }
 
-    .header-subtext {
-        font-size: 16px;
-        text-align: center;
-        max-width: 90%;
-    }
+  .project-img {
+    width: 100%;
+    height: auto;
+  }
 
-    .image-container {
-        flex-direction: column;
-        gap: 1.5rem;
-        margin-top: 5rem;
-    }
+  .project-description {
+    width: 100%;
+    padding: 1rem;
+  }
 
-    .image-obj {
-        width: 80vw;
-        height: auto;
-        border-radius: 1rem;
-    }
+  .project-box.left,
+  .project-box.right {
+    align-self: center;
+  }
 }
-
