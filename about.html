@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="AboutStyle.css" />
+    <link rel="icon" href="AboutMeTab.png" type="image/png" />
+    <meta name="description" content="About Griffin Faecher">
+    <script src="aboutScript.js" defer></script>
+    <title>Griffin's Bio</title>
+</head>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html" class="return">Home</a>
+        </div>
+
+        <div class="nav-center">
+            <a class="title">Griffin Faecher</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="about.html" class="linkable">About</a>
+            <a href="projects.html" class="linkable">Projects</a>
+            <a href="contact.html" class="linkable">Contact</a>
+        </div>
+    </nav>
+
+    <h1>About Me!</h1>
+    <main class="Description-Container">
+        <div class="text-bio">
+            <p>
+                My name is Griffin Faecher, and I am a rising senior at Tufts Universtiy 
+                studying computer engineering with a minor in computer science. I have 
+                a passion for embedded systems, computer architecture, and the alto 
+                saxophone. I am actively seeking opportunities to apply my growing 
+                knowledge and skills in a professional setting. I have a strong 
+                foundation in programming languages such as C, C++, and VHDL, and am 
+                eager to contribute to teams across a plethora of fields regarding 
+                computer engineering. 
+            </p>
+            <p>
+                I have extensive professional experience in engineering roles at TRC 
+                Companies, where I participated in projects across multiple diciplines. 
+                I began as an environmental intern where i assisted in the collection 
+                and analysis of data for environmental cleanup projects. Next summer, I 
+                transitioned to a more technical role as a geospatial intern. I 
+                annotated power station imagery for the YOLO object detection model, 
+                and wrote shell scripts to automate the data collection process.
+            </p>
+            <p>
+                I have also been involved in a number of positions at Tufts. I 
+                was an undergraduate research assistant for Professor Paul 
+                Simmonds, where i assisted in the analysis of III-V 
+                semiconductors. I was also a teaching assistant for Tufts's 
+                Digital Logic Design course, where I ran weekly lab sessions to 
+                teach students how to utilize VHDL to design a large scale 
+                final project. I was also a teaching assistant for Tufts's 
+                Embedded Systems course, where I taught students how to use C 
+                to program an STM-Nucleo microcontroller to interact with a 
+                plethora of different peripherals.
+            </p>
+            <p>
+                As I come to my final year of my undergraduate studies, I am excited to explore
+                opportunities in embedded systems, computer architecture, and 
+                whatever lies in between. Please, feel free to reach out via email or 
+                LinkedIn!
+            </p>
+        </div>
+
+        <div class="image-bio">
+            <img src="AboutMain.jpg" alt="Griffin Faecher" class="bio-img" />
+        </div>
+    </main>
+
+    <div class="gallery-container">
+        <button class="arrow left" onclick="prevImage()">❮</button>
+        <img id="gallery-img" class="gallery-image" src="galleryImg1.jpg" alt="Gallery Image">
+        <button class="arrow right" onclick="nextImage()">❯</button>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="projectsStyle.css" />
+    <link rel="icon" href="projectsTabImage.png" type="image/png" />
+    <meta name="description" content="Griffin's Projects">
+    <script src="projectScript.js" defer></script>
+    <title>Griffin's Projects</title>
+</head>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html" class="return">Home</a>
+        </div>
+
+        <div class="nav-center">
+            <a class="title">Griffin Faecher</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="about.html" class="linkable">About</a>
+            <a href="projects.html" class="linkable">Projects</a>
+            <a href="contact.html" class="linkable">Contact</a>
+        </div>
+    </nav>
+
+    <main class="projects-container">
+        <a href="project1.html" class="project-box left hidden">
+            <img src="JRDesignTitle.jpg" alt="Junior Design Bot" class="project-img" />
+            <div class="project-description">
+                <h3>Self Navigating Robotic Vehicle</h3>
+                <p>For my junior design course, I was tasked with designing and 
+                    building a self-navigating robotic vehicle. The project 
+                included embedded C programming on an Arduino, circuit design 
+                for color and object detection, and power management between 
+                multiple power sources.</p>
+                </p>
+            </div>
+        </a>
+
+        <a href="project2.html" class="project-box right hidden">
+            <img src="EE25Title.png" alt="Waveforms" class="project-img" />
+            <div class="project-description">
+                <h3>Five Stage Pipelined Processor</h3>
+                <p>I designed a five stage pipelined processor using VHDL. The 
+                    processor runs on a small subset of the LEGv8 instruction 
+                    set and is capable of structural and data hazard
+                    resolution with forwarding and stalling.
+                </p>
+            </div>
+        </a>
+
+        <a href="project3.html" class="project-box left hidden">
+            <img src="EE21Title.jpg" alt="Pulse-OX" class="project-img" />
+            <div class="project-description">
+                <h3>Analog Pulse Oximeter</h3>
+                <p>For my analog circuits class, I designed a pulse oximeter 
+                    that displays the user's heart rate on an oscilloscope. The
+                    device uses op-amps to create a bandpass filter, 
+                    photodiodes to detect the user's pulse, and a voltage 
+                    follower to give a clear signal to the oscilloscope.
+                </p>
+            </div>
+        </a>
+
+        <a href="project4.html" class="project-box right hidden">
+            <img src="EE14Title.jpg" alt="Heads Up" class="project-img" />
+            <div class="project-description">
+                <h3>Heads Up on the STM32L4 Discovery Kit</h3>
+                <p>I designed a simple version of the mobile game Heads Up 
+                    using the STM32L4 Discovery Kit. The game uses the LCD 
+                    display a word on the board, and registers rotation using
+                    the onboard accelerometer. UART is used to send data to a 
+                    monitor where the player can see their score, as well as 
+                    other game information.
+                </p>
+            </div>
+        </a>
+    </main>
+</body>
+</html>
