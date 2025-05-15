@@ -220,27 +220,28 @@ p {
     }
 
     h1 {
-        margin-top: 2rem; /* More space below nav */
+        margin-top: 8rem; /* Increased from 2rem to 8rem to bring text down */
         font-size: 32px;
         padding: 0 1rem;
     }
 
     .Description-Container {
-        flex-direction: column;
+        flex-direction: column-reverse; /* Changed to column-reverse to put image first */
         align-items: center;
-        padding: 2rem 1rem;
-        gap: 2rem;
+        padding: 1rem; /* Reduced padding */
+        gap: 1rem; /* Reduced gap */
     }
 
     .text-bio, .image-bio {
         width: 100%;
-        padding: 0 1rem;
+        padding: 0;
         align-items: center;
         text-align: center;
     }
 
     .bio-img {
         max-width: 80vw;
+        max-height: 50vh; /* Added max-height to control image size */
         height: auto;
         border-radius: 1rem;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
@@ -249,33 +250,37 @@ p {
     .text-bio p {
         text-indent: 0;
         text-align: justify;
+        margin-bottom: 1rem; /* Reduced margin */
     }
 
     .gallery-container {
-        flex-direction: row;
-        padding: 0 1rem;
-        justify-content: center;
-        align-items: center;
+        position: relative;
+        width: 90vw;
+        margin: 2rem auto;
+        padding: 0;
     }
 
     .gallery-image {
-        max-width: 70vw;
+        max-width: 100%;
         height: auto;
     }
 
-    .arrow.left, .arrow.right {
+    .arrow {
         position: absolute;
         top: 50%;
-        bottom: auto;
         transform: translateY(-50%);
         margin: 0;
+        padding: 0.5rem;
+        font-size: 1.5rem;
     }
 
     .arrow.left {
-        left: -2rem;
+        left: -1.5rem;
+        right: auto;
     }
 
     .arrow.right {
-        right: -2rem;
+        right: -1.5rem;
+        left: auto;
     }
 }
