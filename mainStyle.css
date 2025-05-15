@@ -11,6 +11,7 @@ body {
 }
 
 /* Navigation Bar Styles */
+@media (max-width: 768px) {
 nav {
     position: fixed;
     top: 0;
@@ -89,6 +90,7 @@ nav a {
     }
 }
 
+}
 /* --------------------------Page Content Styles----------------------------- */
 
 .header {
