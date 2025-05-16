@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="JrDesignStyle.css" />
+    <link rel="icon" href="JrDesignTab.jpg" type="image/png" />
+    <meta name="description" content="Griffin's Jr Design Project">
+    <script src="aboutScript.js" defer></script>
+    <title>Griffin's Jr Design Project</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html" class="return">Home</a>
+        </div>
+
+        <div class="nav-center">
+            <a class="title">Griffin Faecher</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="about.html" class="linkable">About</a>
+            <a href="projects.html" class="linkable">Projects</a>
+            <a href="contact.html" class="linkable">Contact</a>
+        </div>
+    </nav>
+
+    <div class="pair-container">
+        <img src="JrDesignTop.png" alt="Junior Design Bot" class="half-image" />
+        <img src="JrDesignTop2.png" alt="Junior Design Bot" class="half-image" />
+    </div>
+
+    <h1>Self Navigating Robotic Vehicle</h1>
+
+    <p>
+        In my Junior Design course, I and three of my classmates were 
+        tasked with designing, programming, and building a self-navigating 
+        robotic vehicle. The vehicle was required to follow colored lanes, 
+        avoid wall collisions, and communicate with a central server.
+    </p>
+
+    <p>
+        There were two main paths the vehicle needed to follow: track A and 
+        track B. Track A is depicted below, and the only difference between 
+        track A and track B is that track B follows the blue path. The vehicle 
+        was required to complete these tracks both solo, and in tandem with 
+        a partner group. This tasked both groups to plan ahead for 
+        collisions to ensure that each group's vehicle would not interfere 
+        with the other's path.
+    </p>
+
+    <div class="pair-container">
+        <img src="JrDesignTrackA.png" alt="Track A" class="half-image" />
+        <img src="JrDesignTrackB.png" alt="Track B" class="half-image" />
+    </div>
+
+    <p>
+        The project was divided into two main components: hardware and 
+        software. The hardware component involved an H-Bridge for motor 
+        control, infrared sensors for collision detection, and 
+        phototransistors for color sensing. A 3D-printed chassis was also 
+        designed to ensure efficient component placement on our vehicle.
+        The software component involved embedded C programming on an 
+        Arduino UNO microcontroller and the implementation of a WebSocket client 
+        for real-time communication between vehicles. An OLED display was 
+        also included to provide visual feedback on the vehicle's state.
+    </p>
+
+    <div class="pair-container">
+
+        <div class="Schematic-Diagram">
+            <img src="JrDesignSchematic.jpg" alt="Schematic-Diagram" class="schematic-img" />
+        </div>
+
+        <div class="Description-Container">
+            <p>
+                <u><strong>H-Bridge Motor Control:</strong></u>
+
+                    An H-Bridge is a circuit we used to control the direction and speed 
+                of the DC motors on our vehicle. It allowed us to reverse the 
+                polarity of the voltage applied to the motors without any risk of 
+                damaging the components. The H-bridge connects to PWM pins on the 
+                Arduino, allowing us to control the speed and direction of the motors.
+            </p>
+
+            <p>
+                <u><strong>Collision Detection: </strong></u>
+
+                    A phototransistor and an infrared LED were attached to the front 
+                of the vehicle for collision detection. The light that the LED emits
+                is reflected off of walls and detected by the phototransistor. The 
+                voltage across the phototransistor is dependent on the amount of 
+                reflected light, and if under a specified threshold, instruct the 
+                vehicle to turn away from the wall.
+
+            </p>
+
+            <p>
+                <u><strong>Lane following: </strong></u>
+
+                    Two photodiodes were attached to each side of the vehicle to act 
+                    as its eyes. Next to the photodiodes were red and blue LEDs. These 
+                    would flash on and off, and the photodiodes would detect the 
+                    amount of light reflected off the ground. Then, depending on what 
+                    path the vehicle was on, the Arduino would follow pre-determined 
+                    logic to steer the vehicle in the correct direction.
+
+            </p>
+
+            <p>
+                <u><strong>OLED Screen: </strong></u>
+
+                    The OLED screen proved to be a helpful addition in not only 
+                    debugging but also providing an asthetic touch to the vehicle. The
+                    screen displays what track the vehicle is following at the 
+                    beginning of the run, and then displays the vehicle's current 
+                    objective as it moves through the track.
+
+            </p>
+        </div>
+    </div>
+
+    <p>
+        All of these components, except for the motors, were powered by a 
+        9V battery. It proved to be a reliable power source for the 
+        components that were not incredibly power hungry. The motors, 
+        however, were powered by a 6V battery pack. Although at a smaller 
+        voltage, the motors were able to draw more current from the pack 
+        and not lose power nearly as quickly.
+    </p>
+
+    <div class="pair-container">
+
+        <video width="640" controls muted>
+            <source src="JrDesignSingle.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+        </video>
+
+        <video width="640" controls muted>
+            <source src="JRDesignDuo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+        </video>
+
+    </div>
+
+</body>
+</html>
