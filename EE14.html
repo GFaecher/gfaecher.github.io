@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="EE14Style.css" />
+    <link rel="icon" href="EE14Tab.png" type="image/png" />
+    <meta name="description" content="Griffin's Embedded Systems Project">
+    <title>Griffin's Embedded Systems Project</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html" class="return">Home</a>
+        </div>
+
+        <div class="nav-center">
+            <a class="title">Griffin Faecher</a>
+        </div>
+
+        <div class="nav-right">
+            <a href="about.html" class="linkable">About</a>
+            <a href="projects.html" class="linkable">Projects</a>
+            <a href="contact.html" class="linkable">Contact</a>
+        </div>
+    </nav>
+
+    <img src="EE14Head.png" alt="HeadsUp" class="body-img" />
+
+    <h1>Heads Up on STM32L4 Discovery Kit</h1>
+
+    <p>
+        In my Embedded Systems course (which I TA'd for in the spring of 2025), 
+        I was tasked with a creative project using the STM32L4 Discovery Kit. 
+        My classmate and I decided to recreate the mobile game "Heads Up" using 
+        a connection to a desktop computer, the LCD screen on the board, and the 
+        onboard gyroscope.
+    </p>
+
+    <p>
+        A high level state machine of the project is shown below. The general 
+        flow of the project is as follows: On the desktop, a user selects a 
+        category. A timer then starts, which counds on the monitor, while the 
+        first word is displayed on the LCD screen. The user then has two options:
+        they can tilt the board down to indicate that they guessed the word, or 
+        they can tilt the board up to indicate that they want to skip the word.
+        Either way, their input is saved, and the next word is displayed on the
+        LCD screen. The game continues until the timer runs out, at which point 
+        the game ends and the user is shown both their score and the words they 
+        guessed correctly or skipped.
+    </p>
+
+    <img src="EE14Diagram.png" alt="Instructions" class="body-img" />
+
+    <p>
+        The project used a number of different communication protocols and components 
+        to achieve the desired functionality. The gyroscope was communicated with 
+        through SPI, which allowed for fast and efficient data transfer. 
+        We were able to communicate with the desktop computer using UART. This 
+        allowed us to send and receive not only text data to display on a monitor, 
+        but also receive inputs from a keyboard. This allowed the user to pick which 
+        category they wanted to play, making the game more interactive. 
+    </p>
+
+    <video class="video-mid" controls>
+        <source src="EE14Video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</body>
+</html>
