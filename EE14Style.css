@@ -175,6 +175,11 @@ p {
 
 /* -----------------------------Responsive Tweaks----------------------------- */
 @media (max-width: 768px) {
+
+    body {
+        padding: 0 2rem;
+    }
+    
     nav {
         flex-direction: column;
         height: auto;
@@ -213,5 +218,9 @@ p {
 
     .top-img {
         margin-top: 9rem;
+    }
+
+    .body-img:first-of-type {
+        margin-top: 9rem; /* Push image down from navbar */
     }
 }

@@ -176,7 +176,7 @@ p {
 
 @media (max-width: 768px) {
     body {
-        padding: 0 2rem; /* Match other pages */
+        padding: 0 2rem;
     }
 
     nav {
@@ -206,11 +206,11 @@ p {
     }
 
     .half-image {
-        width: 90%; /* Almost full screen width */
+        width: 90%;
     }
 
     .body-img, .video-mid {
-        width: 90%; /* Enlarge all body images and videos */
+        width: 90%;
     }
 
     h1 {

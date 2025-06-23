@@ -199,10 +199,8 @@ footer a:hover {
         font-size: 16px;
     }
 
-    /* Mobile-only video size */
-    .project-video {
-        width: 95%;
-        height: auto;
-        border-radius: 1rem;
+    .video-mid {
+        width: 90%;
+        max-width: 100%;
     }
 }
