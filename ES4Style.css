@@ -1,17 +1,22 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 h3 {
     margin-bottom: 8px;
 }
 
 body {
-    font-family: 'montserrat', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 20px;
-    background-color: #F8F9F7;  /* updated background */
-    color: #2E2E2E;  /* darker text for contrast */
+    background-color: #F8F9F7; 
+    color: #2E2E2E; 
+    padding: 0 4rem; 
 }
 
 /* -----------------------------Nav Bar Styles------------------------------- */
@@ -22,7 +27,7 @@ nav {
     right: 0;
     z-index: 1000;
 
-    background: linear-gradient(90deg, #877F7D, #AD4A28, #DD723C, #FC7001, #DCB697);
+    background: linear-gradient(90deg, #35495E, #6B7A8F); /* Updated gradient */
     border-radius: .4rem .4rem 20rem 20rem;
     height: 5rem;
     padding: 0 2rem;
@@ -51,25 +56,15 @@ nav {
     justify-content: center;
 }
 
-/* Default nav links color and no underline */
 nav a {
     color: #F0F0F0;
     text-decoration: none;
     font-size: 20px;
-    transition: color 0.3s ease, transform 0.3s ease, font-style 0.3s ease,
-                text-decoration 0.3s ease;
-}
-
-/* On hover: underline only, no color change to blue */
-nav a:hover {
-    text-decoration: underline;
-    color: #F0F0F0;
-    transform: scale(1.35);
-    font-style: italic;
+    transition: color 0.3s ease, transform 0.3s ease, font-style 0.3s ease;
 }
 
 .linkable:hover, .return:hover {
-    /* Keep transform and italic from before */
+    color: #C8A2C8;
     transform: scale(1.35);
     font-style: italic;
 }
@@ -79,11 +74,13 @@ nav a:hover {
 }
 
 .title {
+    font-family: 'Playfair Display', serif;
     font-size: 32px;
     font-weight: bold;
     pointer-events: auto;
     transition: transform 0.3s ease;
     cursor: default;
+    color: #F0F0F0;
 }
 
 /* Floating animation on hover */
@@ -91,7 +88,6 @@ nav a:hover {
     animation: floatUpDown 2s ease-in-out infinite;
 }
 
-/* Keyframes for floating effect */
 @keyframes floatUpDown {
     0%, 100% {
         transform: translateY(0);
@@ -176,17 +172,3 @@ p {
     text-indent: 2em;
 }
 
-footer {
-    text-align: center;
-    padding: 2rem 0;
-}
-
-footer a {
-    color: #AD4A28; /* a complementary brown-ish color */
-    text-decoration: underline;
-    font-size: 18px;
-}
-
-footer a:hover {
-    color: #DD723C;
-}

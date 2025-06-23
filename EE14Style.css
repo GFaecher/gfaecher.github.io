@@ -1,16 +1,22 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 h3 {
     margin-bottom: 8px;
 }
 
 body {
-    font-family: 'montserrat', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     font-size: 20px;
-    background-color: #937666;
+    background-color: #F8F9F7; /* Light background */
+    color: #2E2E2E; /* Dark text */
+    padding: 0 2rem; /* Side padding */
 }
 
 /* -----------------------------Nav Bar Styles------------------------------- */
@@ -21,15 +27,13 @@ nav {
     right: 0;
     z-index: 1000;
 
-    background: linear-gradient(90deg, #877F7D, #AD4A28, #DD723C, #FC7001, #DCB697);
+    background: linear-gradient(90deg, #35495E, #6B7A8F);
     border-radius: .4rem .4rem 20rem 20rem;
     height: 5rem;
     padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    
 }
 
 .nav-left, .nav-center, .nav-right {
@@ -70,19 +74,19 @@ nav a {
 }
 
 .title {
+    font-family: 'Playfair Display', serif;
     font-size: 32px;
     font-weight: bold;
     pointer-events: auto;
     transition: transform 0.3s ease;
     cursor: default;
+    color: #F0F0F0;
 }
 
-/* Floating animation on hover */
 .title:hover {
     animation: floatUpDown 2s ease-in-out infinite;
 }
 
-/* Keyframes for floating effect */
 @keyframes floatUpDown {
     0%, 100% {
         transform: translateY(0);
@@ -102,7 +106,7 @@ nav a {
     margin-top: 7rem;
     margin-bottom: 3rem;
     gap: 2rem;
-
+    flex-wrap: wrap;
 }
 
 .half-image {
@@ -113,10 +117,9 @@ nav a {
 
 .Schematic-Diagram,
 .Description-Container {
-    flex: 1 1 45%;  /* grow, shrink, basis */
+    flex: 1 1 45%;
 }
 
-/* Make the image scale nicely */
 .schematic-img {
     width: 100%;
     height: auto;
@@ -134,7 +137,6 @@ nav a {
 }
 
 .body-img {
-    /* width: 90%; */
     max-width: 45%;
     height: auto;
     display: block;
@@ -144,11 +146,11 @@ nav a {
 }
 
 .video-mid {
-    width: 70%;             /* smaller and consistent across devices */
-    max-width: 300px;       /* optional cap to prevent being too wide */
+    width: 50%;            /* smaller than before */
+    max-width: 400px;      /* cap the width on larger screens */
     height: auto;
     display: block;
-    margin: 3rem auto 3rem auto; /* top margin, center, bottom margin */
+    margin: 3rem auto 3rem auto; /* center the video with margins */
     border-radius: 1rem;
     object-fit: contain;
 }
@@ -156,30 +158,56 @@ nav a {
 h1 {
     font-size: 50px;
     font-weight: bold;
-    color: #F0F0F0;
+    color: #2E2E2E;
     text-align: center;
     margin-bottom: 2rem;
 }
 
 p {
     font-size: 20px;
-    color: #F0F0F0;
+    color: #2E2E2E;
     margin-bottom: 2rem;
     gap: 1rem;
     text-indent: 2em;
 }
 
-footer {
-    text-align: center;
-    padding: 2rem 0;
-}
 
-footer a {
-    color: #C8A2C8;
-    text-decoration: underline;
-    font-size: 18px;
-}
 
-footer a:hover {
-    color: #F0F0F0;
+/* -----------------------------Responsive Tweaks----------------------------- */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+
+    .nav-left, .nav-center, .nav-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .pair-container {
+        flex-direction: column;
+    }
+
+    .half-image, .body-img, .video-mid {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
 }
