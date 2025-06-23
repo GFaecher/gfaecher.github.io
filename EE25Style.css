@@ -207,6 +207,17 @@ footer a:hover {
         width: 90%;
     }
 
+    /* Make body-img a bit larger on mobile */
+    .body-img {
+        max-width: 95%; /* Slightly larger */
+    }
+
+    /* Push spanning image down further on mobile */
+    .SpanningImg {
+        margin-top: 9rem; /* Increased top margin to clear nav bar */
+        width: 95%; /* Still responsive */
+    }
+
     h1 {
         font-size: 32px;
     }

@@ -105,12 +105,12 @@ nav a {
     padding: 5rem;
 }
 
-.text-bio {
-    display: flex;
-    width: 60%;
-    flex-direction: column;
-    align-self: flex-start;
+.text-bio p {
+    text-indent: 0;
+    text-align: left;  /* Change this from justify to left */
+    margin-bottom: 1rem;
 }
+
 
 .custom-link {
     color: inherit;

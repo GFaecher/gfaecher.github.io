@@ -172,3 +172,52 @@ p {
     text-indent: 2em;
 }
 
+/* -----------------------------Mobile Styles-------------------------------- */
+
+@media (max-width: 768px) {
+    body {
+        padding: 0 2rem; /* Match other pages */
+    }
+
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+
+    .nav-left, .nav-center, .nav-right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    /* Stack images vertically and make them large */
+    .pair-container {
+        flex-direction: column;
+        margin-top: 9rem;
+    }
+
+    .half-image {
+        width: 90%; /* Almost full screen width */
+    }
+
+    .body-img, .video-mid {
+        width: 90%; /* Enlarge all body images and videos */
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}

@@ -201,10 +201,16 @@ footer a:hover {
 
     .pair-container {
         flex-direction: column;
+        margin-top: 9rem; /* Increased padding to push first image lower */
     }
 
     .half-image, .body-img {
         width: 90%;
+    }
+
+    /* Make the specific image slightly larger on mobile */
+    .body-img {
+        max-width: 95%;
     }
 
     h1 {
