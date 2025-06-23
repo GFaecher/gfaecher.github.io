@@ -159,6 +159,16 @@ footer a:hover {
     color: #2E2E2E;
 }
 
+video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1.5rem auto;
+    border-radius: 1rem;
+    object-fit: contain;
+}   
+
 /* -----------------------------Responsive Tweaks----------------------------- */
 @media (max-width: 768px) {
     /* NAVIGATION: stacked and centered */
@@ -196,7 +206,6 @@ footer a:hover {
         font-size: 16px;
     }
 
-    /* ---------------- Header Images ---------------- */
     .pair-container {
         flex-direction: column; /* Stack images/videos vertically */
         margin-top: 9rem; /* More top margin so images don’t get hidden behind nav */
@@ -212,7 +221,6 @@ footer a:hover {
         width: 90%;
     }
 
-    /* ---------------- Body Images ---------------- */
     .body-img {
         width: 90% !important; /* Make body images larger */
         max-width: 100%;
@@ -221,13 +229,10 @@ footer a:hover {
         object-fit: contain;
     }
 
-    /* ---------------- Video Styling ---------------- */
     video {
-        width: 70% !important;   /* Shrink videos to 70% of screen width */
+        width: 100% !important;
         max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 1.5rem auto;     /* Center videos with spacing */
+        margin: 1.5rem auto;
         border-radius: 1rem;
         object-fit: contain;
     }
