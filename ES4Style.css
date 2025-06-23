@@ -10,7 +10,8 @@ h3 {
 body {
     font-family: 'montserrat', sans-serif;
     font-size: 20px;
-    background-color: #937666;
+    background-color: #F8F9F7;  /* updated background */
+    color: #2E2E2E;  /* darker text for contrast */
 }
 
 /* -----------------------------Nav Bar Styles------------------------------- */
@@ -28,8 +29,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
-    
 }
 
 .nav-left, .nav-center, .nav-right {
@@ -52,15 +51,25 @@ nav {
     justify-content: center;
 }
 
+/* Default nav links color and no underline */
 nav a {
     color: #F0F0F0;
     text-decoration: none;
     font-size: 20px;
-    transition: color 0.3s ease, transform 0.3s ease, font-style 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease, font-style 0.3s ease,
+                text-decoration 0.3s ease;
+}
+
+/* On hover: underline only, no color change to blue */
+nav a:hover {
+    text-decoration: underline;
+    color: #F0F0F0;
+    transform: scale(1.35);
+    font-style: italic;
 }
 
 .linkable:hover, .return:hover {
-    color: #C8A2C8;
+    /* Keep transform and italic from before */
     transform: scale(1.35);
     font-style: italic;
 }
@@ -102,7 +111,6 @@ nav a {
     margin-top: 7rem;
     margin-bottom: 3rem;
     gap: 2rem;
-
 }
 
 .half-image {
@@ -134,7 +142,6 @@ nav a {
 }
 
 .body-img {
-    /* width: 90%; */
     max-width: 45%;
     height: auto;
     display: block;
@@ -144,11 +151,11 @@ nav a {
 }
 
 .video-mid {
-    width: 70%;             /* smaller and consistent across devices */
-    max-width: 640px;       /* optional cap to prevent being too wide */
+    width: 70%;
+    max-width: 640px;
     height: auto;
     display: block;
-    margin: 3rem auto 3rem auto; /* top margin, center, bottom margin */
+    margin: 3rem auto 3rem auto;
     border-radius: 1rem;
     object-fit: contain;
 }
@@ -156,14 +163,14 @@ nav a {
 h1 {
     font-size: 50px;
     font-weight: bold;
-    color: #F0F0F0;
+    color: #2E2E2E; /* darker text */
     text-align: center;
     margin-bottom: 2rem;
 }
 
 p {
     font-size: 20px;
-    color: #F0F0F0;
+    color: #2E2E2E; /* darker text */
     margin-bottom: 2rem;
     gap: 1rem;
     text-indent: 2em;
@@ -175,11 +182,11 @@ footer {
 }
 
 footer a {
-    color: #C8A2C8;
+    color: #AD4A28; /* a complementary brown-ish color */
     text-decoration: underline;
     font-size: 18px;
 }
 
 footer a:hover {
-    color: #F0F0F0;
+    color: #DD723C;
 }

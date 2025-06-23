@@ -14,8 +14,8 @@ h3 {
 body {
     font-family: 'DM Sans', sans-serif;
     font-size: 20px;
-    background: linear-gradient(90deg, #35495E 50%, #6B7A8F 50%);
-    color: #2E2E2E;
+    background-color: #F8F9F7; /* Off-white background */
+    color: #2E2E2E; /* Primary text color */
 }
 
 /* -----------------------------Nav Bar Styles------------------------------- */
@@ -26,7 +26,7 @@ nav {
     right: 0;
     z-index: 1000;
 
-    background: linear-gradient(90deg, #35495E, #6B7A8F);
+    background: linear-gradient(90deg, #35495E, #6B7A8F); /* Updated gradient */
     border-radius: .4rem .4rem 20rem 20rem;
     height: 5rem;
     padding: 0 2rem;
@@ -112,6 +112,15 @@ nav a {
     align-self: flex-start;
 }
 
+.custom-link {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer; 
+    transition: all 0.3s ease;
+    text-decoration: underline;
+}
+
+
 .image-bio {
     display: flex;
     width: 40%;
@@ -165,7 +174,7 @@ p {
     width: auto;
     object-fit: contain;
     border-radius: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
 .arrow {
