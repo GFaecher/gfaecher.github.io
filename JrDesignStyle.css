@@ -185,6 +185,7 @@ footer a:hover {
     .pair-container {
         flex-direction: column;
         margin-top: 9rem; /* Increased padding on mobile only */
+        max-width: 90%;
     }
 
     .half-image {

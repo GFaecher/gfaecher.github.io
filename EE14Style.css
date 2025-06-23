@@ -179,7 +179,7 @@ p {
     body {
         padding: 0 2rem;
     }
-    
+
     nav {
         flex-direction: column;
         height: auto;
@@ -205,7 +205,7 @@ p {
     }
 
     .half-image, .body-img, .video-mid {
-        width: 90%;
+        max-width: 90%;
     }
 
     h1 {
